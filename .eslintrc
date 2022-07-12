@@ -32,6 +32,7 @@
     },
     "plugins": ["react", "@typescript-eslint", "jest"],
     "rules": {
+      "linebreak-style": ["error", "windows"],
       "import/prefer-default-export": "off",
       "import/no-unresolved": "off",
       "import/extensions": "off",
