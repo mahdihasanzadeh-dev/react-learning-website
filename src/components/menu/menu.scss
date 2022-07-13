@@ -1,0 +1,63 @@
+@import '/src/globals/var';
+.menu{
+    direction: rtl;
+    &__item{
+        display: inline-block;
+        margin-left: 2.5rem;
+        position: relative;
+        &:hover{
+            > a {
+                color: var(--main-color);
+            }
+        }
+        > a {
+            display: block;
+            padding: 1.5rem 0;
+            font-weight: 400;
+            color: var(--black-90);
+            transition: color 0.3s ease;
+            > svg{
+                font-size: 13px;
+                margin-right: 3px;
+                pointer-events: none;
+            }
+            &:hover{
+                color: var(--main-color);
+            }
+        }
+        @media screen and (min-width: $medium-width) {
+            &:hover{
+                >.sub-menu{
+                    visibility: visible;
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+        }
+    }
+}
+.sub-menu {
+    position: absolute;
+    background-color: var(--white);
+    right: 0;
+    top: 100%;
+    width: 210px;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    &__item{
+        > a {
+            display: block;
+            padding: 10px 20px;
+            color: var(--black-90);
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.header {
+    border: 1px solid var(--border-color-2);
+    &__main{
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo{
+        > a {
+            font-size: 1.625rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--black-70) !important;
+            > span {
+                color: var(--main-color);
+            }
+        } 
+    }
+}
+
+.header__backdrop,
+.header__close-btn,
+.header__hamburger-btn {
+    display: none;
+}

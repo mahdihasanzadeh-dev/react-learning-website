@@ -1,12 +1,14 @@
 import { memo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import Menu from '@components/menu/menu';
+import './header.scss';
 
 function Header() {
   return (
     <header className="header">
       <div className="container">
-        <div className="header__main">
+        <div className="header__main d-flex">
           <div className="header__logo">
             <a href="#router-dom">
               <span>mahdi</span>
@@ -21,12 +23,7 @@ function Header() {
             <button type="button" className="header__close-btn js-header__menu-toggler">
               <FontAwesomeIcon icon={faTimes} />
             </button>
-            <ul className="menu">
-              <li className="menu__item"><a href="#home">home</a></li>
-              <li className="menu__item"><a href="#course">course</a></li>
-              <li className="menu__item"><a href="#pages">pages</a></li>
-              <li className="menu__item"><a href="#contact">contact</a></li>
-            </ul>
+            <Menu />
           </nav>
         </div>
       </div>

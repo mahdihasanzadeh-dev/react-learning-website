@@ -20,6 +20,7 @@
       "@components/*": ["components/*"],
       "@containers/*": ["containers/*"],
       "@pages/*": ["pages/*"],
+      "@data/*": ["data/*"],
     }
   },
   "include": ["src/**/*"],

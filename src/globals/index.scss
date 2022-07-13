@@ -1,25 +1,102 @@
 
 @import './var';
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
- 
+:root{
+  --hue-value-1: 0;
+  --hue-value-2: 230;
+  --main-color: hsl(var(--hue-value-1), 74%, 61%);
+  --button-hover-color: hsl(var(--hue-value-1), 57%, 53%);
+  --body-bg-color: hsl(var(--hue-value-1), 63%, 97%);
+  --border-color-2: hsl(var(--hue-value-1), 40%, 93%);
+  --shadow: 0 0 10px hsl(var(--hue-value-1), 40%, 90%);
+  --body-gradient-bg-color-1: hsl(var(--hue-value-1), 100%, 50%, 0.2);
+  --body-gradient-bg-color-2: hsl(var(--hue-value-2), 100%, 50%, 0.2);
+  --decoration-bg-color-1: hsl(var(--hue-value-1), 100%, 70%);
+  --decoration-bg-color-2: hsl(var(--hue-value-2), 100%, 70%);
+  --orange: hsl(36, 80%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --WHITE: hsl(0, 0%, 100%);
+  --BLACK: hsl(0, 0%, 0%);
+  --black-90: hsl(0, 0%, 10%);
+  --black-70: hsl(0, 0%, 30%);
+  --black-alpha-40: hsla(0, 0%, 0%, 0.4);
+  --yellow-light: hsl(44, 95%, 83%);
+  --green-light: hsl(158, 68%, 75%);
+  --red-light: hsl(0, 84%, 80%);
+  --orange-light: hsl(22, 85%, 80%);
+  --select-box-bg-color: hsl(0, 0%, 100%);
+  --border-color-1: hsl(0, 0%, 90%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+@font-face {
+  font-family: dana;
+  src: url("../assets/fonts/woff/dana-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+
+
+@font-face {
+  font-family: dana;
+  src: url("../assets/fonts/eot/dana-regularitalic.eot");
+  src: url("../assets/fonts/woff/dana-regularitalic.woff") format("woff"),
+      url("../assets/fonts/woff2/dana-regularitalic.woff") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: dana;
+  src: url("../assets/fonts/eot/dana-bold.eot");
+  src: url("../assets/fonts/woff/dana-bold.woff") format("woff"),
+        url("../assets/fonts/woff2/dana-bold.woff") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: dana;
+  src: url("../assets/fonts/eot/dana-bolditalic.eot") format("eot");
+  src: url("../assets/fonts/woff/dana-bolditalic.woff") format("woff"),
+       url("../assets/fonts/woff2/dana-bolditalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: auto;
+}
+
+body {
+  font-family: 'dana' !important;
+  background-color: var(--body-bg-color) !important;
+  font-size: 16px !important;
+  font-weight: 400;
+  color: var(--black-70) !important;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  text-decoration: none;
+  color:var(--main-color) ;
+  text-decoration: none !important;
+  &:hover{
+    color: var(--main-color) !important;
+  }
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+::selection {
+  color: var(--WHITE);
+  background-color: var(--main-color);
 }

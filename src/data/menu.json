@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "title": "صفحه اصلی",
+        "path": "#home",
+        "subMenu":[]
+    },
+    {
+        "id": 2,
+        "title": "دوره ها",
+        "path": "#home",
+        "subMenu":[
+            {
+                "id":3,
+                "title": "طراحی وب",
+                "path": "#home"
+            },
+            {
+                "id":4,
+                "title": "اندروید",
+                "path": "#home"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "صفحات",
+        "path": "#home",
+        "subMenu":[
+            {
+                "id":6,
+                "title": "ثبت نام",
+                "path": "#home"
+            },
+            {
+                "id":7,
+                "title": "ورود",
+                "path": "#home"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "درباره ما",
+        "path": "#home",
+        "subMenu":[]
+    }
+]
