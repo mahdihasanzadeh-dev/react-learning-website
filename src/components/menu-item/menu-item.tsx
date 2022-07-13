@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-fragments */
 /* eslint-disable react/jsx-no-useless-fragment */
 import type { ReactElement } from 'react';
-import { Fragment, memo } from 'react';
+import { Fragment } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import type { IMenuItemProperties } from './menu-item-interface';
@@ -36,4 +36,4 @@ function MenuItem({ path, title, subMenu }:IMenuItemProperties): ReactElement {
   );
 }
 
-export default memo(MenuItem);
+export default MenuItem;

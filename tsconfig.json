@@ -21,6 +21,7 @@
       "@containers/*": ["containers/*"],
       "@pages/*": ["pages/*"],
       "@data/*": ["data/*"],
+      "@assets/*": ["assets/*"],
     }
   },
   "include": ["src/**/*"],

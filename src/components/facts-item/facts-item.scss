@@ -1,0 +1,22 @@
+.facts__item{
+    padding: 15px 0;
+    h2{
+        font-weight: 700;
+        font-size: 1.875rem;
+    }
+    p{
+        margin: 0 !important;
+    }
+    &--1{
+        color: var(--black-70) !important;
+    }
+    &--2{
+        color: var(--green-light) !important;
+    }
+    &--3{
+        color: var(--red-light) !important;
+    }
+    &--4{
+        color: var(--orange-light) !important;
+    }
+}

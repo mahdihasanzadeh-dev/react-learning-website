@@ -1,10 +1,10 @@
-import { memo } from 'react';
+import type { ReactElement } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import Menu from '@components/menu/menu';
 import './header.scss';
 
-function Header() {
+function Header():ReactElement {
   return (
     <header className="header">
       <div className="container">
@@ -31,4 +31,4 @@ function Header() {
   );
 }
 
-export default memo(Header);
+export default Header;
