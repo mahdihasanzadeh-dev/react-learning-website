@@ -1,0 +1,53 @@
+.courses-item {
+    margin-bottom: 1.875rem;
+    position: relative;
+    .img-box {
+        img{
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    .link {
+        color: var(--black-70);
+        display: inline-block;
+    }
+    .title {
+        margin: 1rem 0;
+        transition: color 0.3s ease;
+    }
+    &:hover {
+        .title {
+            color: var(--main-color);
+        }
+    }
+    .instructor {
+        margin: 0 0 12px;
+        img{
+            width: 30px;
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+    }
+    .rating {
+            font-size: 0.875rem;
+    }
+    .average-rating {
+        font-weight: 600;
+        color:var(--orange);
+    }
+    .average-stars {
+        svg {
+            color: var(--orange)
+        }
+    }
+    .price{
+        position:absolute;
+        right: 1rem;
+        top: 1rem;
+        background-color: var(--main-color);
+        color: var(--WHITE);
+        font-weight: 600;
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+}

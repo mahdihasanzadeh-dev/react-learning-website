@@ -1,10 +1,10 @@
 import type { ReactElement } from 'react';
-import MenuItem from '@components/menu-item/menu-item';
+import { MenuItem } from '@components/menu-item/menu-item';
 import menuData from '@data/menu.json';
 import type { IMenuItemProperties } from '@components/menu-item/menu-item-interface';
 import './menu.scss';
 
-function Menu():ReactElement {
+export function Menu():ReactElement {
   return (
     <ul className="menu">
       {
@@ -24,5 +24,3 @@ function Menu():ReactElement {
     </ul>
   );
 }
-
-export default Menu;

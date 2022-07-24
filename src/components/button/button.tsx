@@ -4,7 +4,7 @@ import type { ReactElement } from 'react';
 import { IButtonProperties, ButtonTypes, ButtonSize } from './button-interface';
 import './button.scss';
 
-function Button({
+export function Button({
   text,
   isDisabled = false,
   type = ButtonTypes.filled,
@@ -36,5 +36,3 @@ function Button({
     </button>
   );
 }
-
-export default Button;

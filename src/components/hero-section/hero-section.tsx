@@ -1,10 +1,10 @@
 /* eslint-disable max-len */
 import type { ReactElement } from 'react';
-import Button from '@components/button/button';
+import { Button } from '@components/button/button';
 import BannerImage from '@assets/img/banner-img.png';
 import './hero-section.scss';
 
-function HeroSection():ReactElement {
+export function HeroSection():ReactElement {
   return (
     <div className="hero-section">
       <div className="container">
@@ -36,5 +36,3 @@ function HeroSection():ReactElement {
     </div>
   );
 }
-
-export default HeroSection;

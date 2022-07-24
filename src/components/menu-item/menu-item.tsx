@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import type { IMenuItemProperties } from './menu-item-interface';
 
-function MenuItem({ path, title, subMenu }:IMenuItemProperties): ReactElement {
+export function MenuItem({ path, title, subMenu }:IMenuItemProperties): ReactElement {
   return (
 
     <Fragment>
@@ -35,5 +35,3 @@ function MenuItem({ path, title, subMenu }:IMenuItemProperties): ReactElement {
     </Fragment>
   );
 }
-
-export default MenuItem;

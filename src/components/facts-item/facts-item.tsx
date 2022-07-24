@@ -2,7 +2,7 @@ import type { ReactElement } from 'react';
 import type { IFactItemProperties } from './facts-item-interface';
 import './facts-item.scss';
 
-function FactsItem({ fact, title, id }:IFactItemProperties):ReactElement {
+export function FactsItem({ fact, title, id }:IFactItemProperties):ReactElement {
   return (
     <div className="col-md-6 col-lg-3">
       <div className="facts__item">
@@ -12,5 +12,3 @@ function FactsItem({ fact, title, id }:IFactItemProperties):ReactElement {
     </div>
   );
 }
-
-export default FactsItem;

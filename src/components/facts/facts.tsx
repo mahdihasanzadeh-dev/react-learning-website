@@ -1,10 +1,10 @@
 import type { ReactElement } from 'react';
 import facts from '@data/facts.json';
-import FactsItem from '@components/facts-item/facts-item';
+import { FactsItem } from '@components/facts-item/facts-item';
 import type { IFactItemProperties } from '@components/facts-item/facts-item-interface';
 import './facts.scss';
 
-function Facts():ReactElement {
+export function Facts():ReactElement {
   return (
     <div className="facts-section">
       <div className="container">
@@ -29,5 +29,3 @@ function Facts():ReactElement {
     </div>
   );
 }
-
-export default Facts;

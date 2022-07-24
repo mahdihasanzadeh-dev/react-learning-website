@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "طراحی وب",
+        "image":"/src/assets/img/courses/web-development/1.jpg",
+        "instructor": "پیترجکسون",
+        "instructorImage": "/src/assets/img/instructor/1.png",
+        "rating":"4.5",
+        "reviews":"504",
+        "price":"1290,000"
+    },
+    {
+        "id": 2,
+        "title": "آموزش React JS",
+        "image":"/src/assets/img/courses/web-development/2.jpg",
+        "instructor": "پیترجکسون",
+        "instructorImage": "/src/assets/img/instructor/1.png",
+        "rating":"4.5",
+        "reviews":"881",
+        "price":"149,000"
+    },
+    {
+        "id": 3,
+        "title": "آموزش React Native",
+        "image":"/src/assets/img/courses/web-development/3.jpg",
+        "instructor": "پیترجکسون",
+        "instructorImage": "/src/assets/img/instructor/1.png",
+        "rating":"4.5",
+        "reviews":"254",
+        "price":"159,000"
+    },
+    {
+        "id": 4,
+        "title": "آموزش Elecron JS",
+        "image":"/src/assets/img/courses/web-development/4.jpg",
+        "instructor": "پیترجکسون",
+        "instructorImage": "/src/assets/img/instructor/1.png",
+        "rating":"4.5",
+        "reviews":"110",
+        "price":"160,000"
+    }
+]
