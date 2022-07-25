@@ -1,20 +1,23 @@
 import ReactDOM from 'react-dom/client';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
+import { Home } from '@pages/home/home';
 import { Header } from '@components/header/header';
-import { HeroSection } from '@components/hero-section/hero-section';
-import { Facts } from '@components/facts/facts';
-import { CoursesSection } from '@components/courses-section/courses-section';
-import { Testimonials } from '@components/testimonials/testimonials';
-import { BecomeInstructor } from '@components/become-instructor/become-instructor';
+import { Footer } from '@components/footer/footer';
 import './globals/bootstrap.min.css';
 import './globals/index.scss';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <div className="main-wrapper">
-    <Header />
-    <HeroSection />
-    <Facts />
-    <CoursesSection />
-    <Testimonials />
-    <BecomeInstructor />
-  </div>,
+  <Router>
+    <div className="main-wrapper">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </div>
+  </Router>,
 );

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import type { ReactElement } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -10,10 +11,10 @@ export function Header():ReactElement {
       <div className="container">
         <div className="header__main d-flex">
           <div className="header__logo">
-            <a href="#router-dom">
+            <Link to="/">
               <span>mahdi</span>
               hasanzadeh
-            </a>
+            </Link>
           </div>
           <button type="button" className="header__hamburger-btn js-header__menu-toggler">
             <span />

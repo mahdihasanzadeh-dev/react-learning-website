@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-fragments */
 /* eslint-disable react/jsx-no-useless-fragment */
+import { Link } from 'react-router-dom';
 import type { ReactElement } from 'react';
 import { Fragment } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,23 +15,23 @@ export function MenuItem({ path, title, subMenu }:IMenuItemProperties): ReactEle
         subMenu.length > 0
           ? (
             <li className="menu__item menu__item-has-children">
-              <a href={path} className="js-toggle-sub-menu">
+              <Link to={path} className="js-toggle-sub-menu">
                 {title}
                 {' '}
                 <FontAwesomeIcon icon={faChevronDown} />
-              </a>
+              </Link>
               <ul className="sub-menu js-sub-menu">
                 {
                       subMenu.map((submenu) => (
                         <li className="sub-menu__item" key={submenu.id}>
-                          <a href={submenu.path}>{submenu.title}</a>
+                          <Link to={submenu.path}>{submenu.title}</Link>
                         </li>
                       ))
                   }
               </ul>
             </li>
           )
-          : <li className="menu__item"><a href={path}>{title}</a></li>
+          : <li className="menu__item"><Link to={path}>{title}</Link></li>
       }
     </Fragment>
   );

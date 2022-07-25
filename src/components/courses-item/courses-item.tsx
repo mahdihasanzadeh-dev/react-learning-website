@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-one-expression-per-line */
+import { Link } from 'react-router-dom';
 import type { ReactElement } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
@@ -18,7 +19,7 @@ export function CoursesItem({
   return (
     <div className="col-md-6 col-lg-3">
       <div className="courses-item">
-        <a href={`#course-detail${id}`} className="link">
+        <Link to={`/course/${id}`} className="link">
           <div className="courses-item__inner">
             <div className="img-box">
               <img src={image} alt="course" />
@@ -41,7 +42,7 @@ export function CoursesItem({
             </div>
             <div className="price">{price}</div>
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );
