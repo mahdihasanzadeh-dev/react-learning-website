@@ -141,3 +141,26 @@ h3{
   color: var(--main-color) !important;
   font-size: 1.75rem;
 }
+
+.next-arrow, .prev-arrow {
+  position: absolute;
+  bottom: -3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  svg{
+    width: 25px;
+    height: 25px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+  }
+}
+.prev-arrow {
+  right: 26px;
+}
+.next-arrow {
+  left: 26px;
+}
