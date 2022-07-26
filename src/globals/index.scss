@@ -164,3 +164,10 @@ h3{
 .next-arrow {
   left: 26px;
 }
+.breadcrumb-item+.breadcrumb-item{
+  &::before{
+    float: right !important;
+    padding-left: var(--bs-breadcrumb-item-padding-x);
+  }
+
+}

@@ -5,7 +5,7 @@ import { Facts } from '@components/facts/facts';
 import { CoursesSection } from '@components/courses-section/courses-section';
 import { Testimonials } from '@components/testimonials/testimonials';
 import { BecomeInstructor } from '@components/become-instructor/become-instructor';
-import { Language } from '../../globals/enum';
+import { Language } from '@globals/enum';
 
 export function Home():ReactElement {
   return (
