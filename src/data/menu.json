@@ -2,47 +2,47 @@
     {
         "id": 1,
         "title": "صفحه اصلی",
-        "path": "#home",
+        "path": "/",
         "subMenu":[]
     },
     {
         "id": 2,
         "title": "دوره ها",
-        "path": "#home",
+        "path": "/courses",
         "subMenu":[
             {
                 "id":3,
                 "title": "طراحی وب",
-                "path": "#home"
+                "path": "/courses/1"
             },
             {
                 "id":4,
                 "title": "اندروید",
-                "path": "#home"
+                "path": "/courses/2"
             }
         ]
     },
     {
         "id": 5,
         "title": "صفحات",
-        "path": "#home",
+        "path": "#",
         "subMenu":[
             {
                 "id":6,
                 "title": "ثبت نام",
-                "path": "#home"
+                "path": "/signup"
             },
             {
                 "id":7,
                 "title": "ورود",
-                "path": "#home"
+                "path": "/login"
             }
         ]
     },
     {
         "id": 8,
-        "title": "درباره ما",
-        "path": "#home",
+        "title": "تماس با ما",
+        "path": "/contact",
         "subMenu":[]
     }
 ]

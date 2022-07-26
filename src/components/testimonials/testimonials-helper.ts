@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
-import type { ISetState } from '@interface';
 import type { ITestimonialsItemProperties } from '@components/testimonials-item/testimonials-item-interface';
+import type { ISetState } from '@globals/interface';
 import type { ITestimonialsState } from './testimonials-interface';
 
 export function testimonialsHelper(
