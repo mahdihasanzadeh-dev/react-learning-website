@@ -24,7 +24,15 @@ export function MenuItem({ path, title, subMenu }:IMenuItemProperties): ReactEle
                 {
                       subMenu.map((submenu) => (
                         <li className="sub-menu__item" key={submenu.id}>
-                          <Link to={submenu.path}>{submenu.title}</Link>
+                          <Link
+                            to={submenu.path}
+                            state={{
+                              title: submenu.title,
+                            }}
+                          >
+                            {submenu.title}
+
+                          </Link>
                         </li>
                       ))
                   }

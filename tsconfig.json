@@ -22,7 +22,7 @@
       "@pages/*": ["pages/*"],
       "@data/*": ["data/*"],
       "@assets/*": ["assets/*"],
-      "@globals": ["globals/*"]
+      "@globals/*": ["globals/*"]
     }
   },
   "include": ["src/**/*"],

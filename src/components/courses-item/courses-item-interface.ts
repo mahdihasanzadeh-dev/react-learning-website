@@ -7,4 +7,5 @@ export interface ICourseItemProperties {
   rating: string;
   reviews: string;
   price: string;
+  category : string;
 }

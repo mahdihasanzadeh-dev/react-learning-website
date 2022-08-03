@@ -1,10 +1,13 @@
-/* eslint-disable max-len */
-import type { ReactElement } from 'react';
 import { Button } from '@components/button/button';
+import { useNavigate } from 'react-router-dom';
 import BannerImage from '@assets/img/banner-img.png';
+import type { ReactElement } from 'react';
+import type { NavigateFunction } from 'react-router-dom';
 import './hero-section.scss';
 
 export function HeroSection():ReactElement {
+  const navigate: NavigateFunction = useNavigate();
+
   return (
     <div className="hero-section">
       <div className="container">
@@ -16,7 +19,7 @@ export function HeroSection():ReactElement {
               <p className="mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
               <Button
                 text="ثبت نام"
-                onClick={() => console.log('sdf')}
+                onClick={() => navigate('/signup')}
                 backgroundColor="main"
               />
             </div>

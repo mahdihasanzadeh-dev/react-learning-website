@@ -15,7 +15,7 @@
     transition: all 0.3s ease;
     &:hover{
         border-color: transparent;
-        color: var(--WHITE);
+        color: var(--WHITE) !important;
         background-color: var(--button-hover-color) !important;
         transition: all 0.3s ease;
     }
@@ -51,9 +51,8 @@
   
   
   .disabled {
-    opacity: 0.6;
+    opacity: 1 !important;
     cursor: not-allowed;
-    color: #9e9e9e;
   }
   
   .icon-start {
@@ -93,7 +92,7 @@
     color: #3d5afe;
   }
   .text-default {
-    color: #3f3f3f;
+    color: var(--black-70);
   }
   .text-white {
     color: #fff;

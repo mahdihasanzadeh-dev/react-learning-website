@@ -5,6 +5,8 @@ import { Facts } from '@components/facts/facts';
 import { CoursesSection } from '@components/courses-section/courses-section';
 import { Testimonials } from '@components/testimonials/testimonials';
 import { BecomeInstructor } from '@components/become-instructor/become-instructor';
+import { CoursesSectionHeadline } from '@components/courses-section-headline/courses-section-headline';
+import { ShowAllCourses } from '@components/show-all-courses/show-all-courses';
 import { Language } from '@globals/enum';
 
 export function Home():ReactElement {
@@ -18,7 +20,12 @@ export function Home():ReactElement {
       />
       <HeroSection />
       <Facts />
-      <CoursesSection />
+      <CoursesSectionHeadline
+        title="دوره ها"
+        subTitle="دوره مد نظر خود را پیدا کنید"
+      />
+      <CoursesSection coursesCategory="all" />
+      <ShowAllCourses />
       <Testimonials />
       <BecomeInstructor />
     </>

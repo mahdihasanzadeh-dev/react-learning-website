@@ -1,13 +1,14 @@
 [
     {
         "id": 1,
-        "title": "طراحی وب",
+        "title": " طراحی وب مقدماتی",
         "image":"/src/assets/img/courses/web-development/1.jpg",
         "instructor": "پیترجکسون",
         "instructorImage": "/src/assets/img/instructor/1.png",
         "rating":"4.5",
         "reviews":"504",
-        "price":"1290,000"
+        "price":"1290,000",
+        "category": "وب"
     },
     {
         "id": 2,
@@ -17,7 +18,8 @@
         "instructorImage": "/src/assets/img/instructor/1.png",
         "rating":"4.5",
         "reviews":"881",
-        "price":"149,000"
+        "price":"149,000",
+        "category": "وب"
     },
     {
         "id": 3,
@@ -27,7 +29,8 @@
         "instructorImage": "/src/assets/img/instructor/1.png",
         "rating":"4.5",
         "reviews":"254",
-        "price":"159,000"
+        "price":"159,000",
+        "category": "موبایل"
     },
     {
         "id": 4,
@@ -37,6 +40,40 @@
         "instructorImage": "/src/assets/img/instructor/1.png",
         "rating":"4.5",
         "reviews":"110",
-        "price":"160,000"
+        "price":"160,000",
+        "category": "دسکتاپ"
+    },
+    {
+        "id": 5,
+        "title": " طراحی وب پیشرفته",
+        "image":"/src/assets/img/courses/web-development/2.jpg",
+        "instructor": "پیترجکسون",
+        "instructorImage": "/src/assets/img/instructor/1.png",
+        "rating":"4.5",
+        "reviews":"504",
+        "price":"1990,000",
+        "category": "وب"
+    },
+    {
+        "id": 6,
+        "title": "آموزش vue js",
+        "image":"/src/assets/img/courses/web-development/3.jpg",
+        "instructor": "پیترجکسون",
+        "instructorImage": "/src/assets/img/instructor/1.png",
+        "rating":"4.5",
+        "reviews":"504",
+        "price":"299,000",
+        "category": "وب"
+    },
+    {
+        "id": 7,
+        "title": "آموزش angular js",
+        "image":"/src/assets/img/courses/web-development/3.jpg",
+        "instructor": "پیترجکسون",
+        "instructorImage": "/src/assets/img/instructor/1.png",
+        "rating":"4.5",
+        "reviews":"504",
+        "price":"369,000",
+        "category": "وب"
     }
 ]

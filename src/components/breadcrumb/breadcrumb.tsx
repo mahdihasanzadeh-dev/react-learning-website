@@ -8,26 +8,26 @@ import './breadcrumb.scss';
 export function BreadcrumbComponent({ title }: IBredcrumbInterface) {
   const { pathname } = useLocation();
   const helper = breadcrumbHelper();
-  const pathnames = pathname.split('/').filter(Boolean);
+  const pathnames: string[] = pathname.split('/').filter(Boolean);
 
   return (
     <div className="breadcrumb-nav">
       <div className="container">
-        <Breadcrumb>
-          <BreadcrumbItem>
+        <Breadcrumb className="breadcrumb">
+          <BreadcrumbItem className="breadcrumb__item">
             <Link to="/">
               صفحه اصلی
             </Link>
           </BreadcrumbItem>
           {pathnames.map((name, index) => {
-            const routeTo = `/${pathnames.slice(0, index + 1).join('/')}`;
-            const isLast = index === pathnames.length - 1;
+            const routeTo: string = `/${pathnames.slice(0, index + 1).join('/')}`;
+            const isLast: boolean = index === pathnames.length - 1;
             return isLast ? (
-              <BreadcrumbItem active key={useId()}>
+              <BreadcrumbItem active key={useId()} className="breadcrumb__item">
                 { (title != null) ? title : helper.translate(name)}
               </BreadcrumbItem>
             ) : (
-              <BreadcrumbItem key={useId()}>
+              <BreadcrumbItem key={useId()} className="breadcrumb__item">
                 <Link to={routeTo}>
                   {helper.translate(name)}
                 </Link>

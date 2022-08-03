@@ -1,3 +1,9 @@
 .breadcrumb-nav{
     direction: rtl;
+    padding: 10px 0;
+}
+.breadcrumb {
+    &__item.active{
+        color: var(--black-70) !important;
+    }
 }

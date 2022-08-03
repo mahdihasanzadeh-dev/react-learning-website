@@ -15,11 +15,18 @@ export function CoursesItem({
   rating,
   reviews,
   price,
+  category,
 }: ICourseItemProperties): ReactElement {
   return (
     <div className="col-md-6 col-lg-3">
       <div className="courses-item">
-        <Link to={`/course/${id}`} className="link">
+        <Link
+          to={`/courses/${id}`}
+          state={{
+            title,
+          }}
+          className="link"
+        >
           <div className="courses-item__inner">
             <div className="img-box">
               <img src={image} alt="course" />
@@ -41,6 +48,7 @@ export function CoursesItem({
               <span className="reviews">({reviews})</span>
             </div>
             <div className="price">{price}</div>
+            <div className="category">{category}</div>
           </div>
         </Link>
       </div>

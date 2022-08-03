@@ -4,12 +4,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import { Home } from '@pages/home/home';
-import { Courses } from '@pages/courses/courses';
-import { CourseDetails } from '@pages/course-details/course-details';
-import { LogIn } from '@pages/login/login';
-import { SignUp } from '@pages/signup/signup';
-import { Contact } from '@pages/contact/contact';
+import { ROUTES } from '@globals/routes';
 import { Header } from '@components/header/header';
 import { Footer } from '@components/footer/footer';
 import './globals/bootstrap.min.css';
@@ -20,12 +15,20 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <div className="main-wrapper">
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/courses/:courseId" element={<CourseDetails />} />
-        <Route path="/login" element={<LogIn />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/contact" element={<Contact />} />
+        {
+          Object.entries(ROUTES).map((route) => {
+            const [key, value] = route;
+            // eslint-disable-next-line @typescript-eslint/naming-convention
+            const ToplevelComponent = value.element;
+            return (
+              <Route
+                key={key}
+                path={value.path}
+                element={<ToplevelComponent />}
+              />
+            );
+          })
+        }
       </Routes>
       <Footer />
     </div>

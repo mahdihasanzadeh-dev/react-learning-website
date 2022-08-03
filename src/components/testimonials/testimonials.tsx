@@ -66,10 +66,10 @@ export function Testimonials():ReactElement {
               {
                 testimonialsData.map((testimonial) => {
                   const { name, role, avatar, comment } = testimonial;
-                  const id = useId();
+
                   return (
                     <TestimonialsItem
-                      key={id}
+                      key={useId()}
                       name={name}
                       role={role}
                       avatar={avatar}

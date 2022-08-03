@@ -40,14 +40,21 @@
             color: var(--orange)
         }
     }
-    .price{
-        position:absolute;
-        right: 1rem;
+    .price, .category{
+        position:absolute;  
         top: 1rem;
         background-color: var(--main-color);
-        color: var(--WHITE);
-        font-weight: 600;
-        padding: 4px 8px;
+        color: var(--WHITE);     
         border-radius: 4px;
+    }
+    .price{
+        right: 1rem;
+        padding: 4px 8px;
+        font-weight: 600;
+    }
+    .category{
+        left: 1rem;
+        font-size: 10px;
+        padding: 2px 4px;
     }
 }

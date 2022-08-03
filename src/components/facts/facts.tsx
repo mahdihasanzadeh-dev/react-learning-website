@@ -6,7 +6,7 @@ import './facts.scss';
 
 export function Facts():ReactElement {
   return (
-    <div className="facts-section">
+    <div className="facts-section pb-5">
       <div className="container">
         <div className="box py-2">
           <div className="row text-center">
