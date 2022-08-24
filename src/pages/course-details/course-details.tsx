@@ -5,6 +5,8 @@ import type { ReactElement } from 'react';
 import type { Location } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { BreadcrumbComponent } from '@components/breadcrumb/breadcrumb';
+import { CourseDetailsContent } from '@components/course-details-content/course-details-content';
+import { CourseDetailsSideBar } from '@components/course-details-sidebar/course-details-sidebar';
 import { Language } from '@globals/enum';
 import type { ILocationState } from './course-details-interface';
 
@@ -20,7 +22,20 @@ export function CourseDetails():ReactElement {
         language={Language.FA_IR}
       />
       <BreadcrumbComponent title={title} />
-      <h1>CourseDetails</h1>
+      <section className="course-details section-padding">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8">
+              <CourseDetailsContent
+                title={title}
+              />
+            </div>
+            <div className="col-lg-4">
+              <CourseDetailsSideBar />
+            </div>
+          </div>
+        </div>
+      </section>
     </>
 
   );

@@ -63,7 +63,7 @@ export function Courses():ReactElement {
             </div>
           </div>
           <div className="row">
-            <div className="col-12">
+            <div className="col-12 mt-3">
               <Paginate />
             </div>
           </div>

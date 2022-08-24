@@ -1,0 +1,31 @@
+.course-header{
+    h2{
+        font-size: 1.875rem;
+        margin: 0 0 1rem;
+        font-weight: 600;
+    }
+    .rating {
+        font-size: 0.875rem;
+        span{
+            vertical-align: middle;
+        }
+    }
+    .average-rating {
+        font-weight: 600;
+        color:var(--orange);
+    }
+    .average-stars {
+        svg {
+            color: var(--orange);
+            font-size: 0.875rem;
+        }
+    }
+    ul {
+        li {
+            margin: 0.375rem 0 0;
+            span{
+                margin-left: 0.375rem;
+            }
+        }
+    }
+}
