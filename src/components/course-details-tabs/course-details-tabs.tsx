@@ -1,11 +1,15 @@
 import { useState } from 'react';
 import type { ReactElement } from 'react';
 import { Button } from '@components/button/button';
+import { CourseCurriculum } from '@components/course-curriculum/course-curriculum';
+import { CourseDescription } from '@components/course-description/course-description';
+import { CourseInstructor } from '@components/course-instructor/course-instructor';
+import { CourseComments } from '@components/course-comments/course-comments';
 import { courseDetailsTabsHelper } from './course-details-tabs-helper';
-import type { ICourseDetailsTabsState } from './course-details-tabs-interface';
+import type { ICourseDetailsTabsState, ICourseTabs } from './course-details-tabs-interface';
 import './course-details-tabs.scss';
 
-const TABS: string[] = ['سرفصل', 'توضیحات', 'مدرس', 'نظرات'];
+const TABS: ICourseTabs[] = ['سرفصل', 'توضیحات', 'مدرس', 'نظرات'];
 
 export function CourseDetailsTabs():ReactElement {
   const [state, setState] = useState<ICourseDetailsTabsState>({
@@ -16,9 +20,10 @@ export function CourseDetailsTabs():ReactElement {
   const helper = courseDetailsTabsHelper(state, setState);
 
   return (
-    <div className="course-details-tab-container">
-      {
-        TABS.map((tab: string) => (
+    <>
+      <div className="course-details-tab-container">
+        {
+        TABS.map((tab: ICourseTabs) => (
           <Button
             text={tab}
             backgroundColor={tab === aciveTab ? 'main' : 'white'}
@@ -28,6 +33,23 @@ export function CourseDetailsTabs():ReactElement {
           />
         ))
     }
-    </div>
+      </div>
+      <div className="course-details-tab-content">
+        {(() => {
+          switch (aciveTab) {
+            case 'سرفصل':
+              return <CourseCurriculum />;
+            case 'توضیحات':
+              return <CourseDescription />;
+            case 'مدرس':
+              return <CourseInstructor />;
+            case 'نظرات':
+              return <CourseComments />;
+            default:
+              return <CourseCurriculum />;
+          }
+        })()}
+      </div>
+    </>
   );
 }
