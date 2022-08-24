@@ -9,6 +9,7 @@ import { CourseDetailsContent } from '@components/course-details-content/course-
 import { CourseDetailsSideBar } from '@components/course-details-sidebar/course-details-sidebar';
 import { Language } from '@globals/enum';
 import type { ILocationState } from './course-details-interface';
+import './course-details.scss';
 
 export function CourseDetails():ReactElement {
   const location: Location = useLocation();

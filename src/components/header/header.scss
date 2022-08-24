@@ -1,8 +1,10 @@
 .header {
     border: 1px solid var(--border-color-2);
     &__main{
+        display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-direction: row-reverse;
     }
     &__logo{
         > a {

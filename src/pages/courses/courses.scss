@@ -1,8 +1,11 @@
-.category__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .btn{
-        margin: 0.5rem;
+.course-section{
+    padding-top: 0 !important;
+    .category__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn{
+            margin: 0.5rem;
+        }
     }
 }

@@ -1,0 +1,45 @@
+.course-instructor{
+    h3{
+        font-weight: 600;
+    }
+    .details-wrap{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap!important;
+    }
+    .img-box{
+        img{
+            width: 8rem;
+            margin-bottom: 1rem;
+            border-radius: 100%;
+        }
+    }
+    .left-box{
+        margin-right: 1.5rem!important;
+        h4{
+            font-size: 1rem;
+            text-transform: capitalize;
+            margin-bottom: .625rem;
+            font-weight: 600;
+            span{
+                font-weight: 300;
+            }
+        }
+        ul{
+            li{
+                svg{
+                    color: var(--main-color);
+                    margin-left: 5px;
+                }
+                &:not(:last-child){
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+        p{
+            text-align: justify;
+            margin-bottom: 0;
+        }
+
+}

@@ -9,7 +9,7 @@ export function Header():ReactElement {
   return (
     <header className="header">
       <div className="container">
-        <div className="header__main d-flex">
+        <div className="header__main">
           <div className="header__logo">
             <Link to="/">
               <span>mahdi</span>
