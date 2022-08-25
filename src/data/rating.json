@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "progress": "50",
+        "star": "5"
+    },
+    {
+        "id": 2,
+        "progress": "30",
+        "star": "4"
+    },
+    {
+        "id": 3,
+        "progress": "10",
+        "star": "3"
+    },
+    {
+        "id": 4,
+        "progress": "7",
+        "star": "2"
+    },
+    {
+        "id": 5,
+        "progress": "3",
+        "star": "1"
+    }
+]

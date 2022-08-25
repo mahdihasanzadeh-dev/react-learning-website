@@ -1,0 +1,38 @@
+.course-reviews-filter{
+    margin: 0 0 35px;
+    width: 200px;
+    h3{
+        margin-bottom: 1.5rem!important;
+        font-weight: 600;
+    }
+    select{
+        outline: none;
+    }
+    .form-group{
+        margin-bottom: 25px;
+        position: relative;
+    }
+    .form-control{
+        height: 48px;
+        border-color: var(--border-color-2);
+        color: var(--black-90);
+        background-color: transparent;
+        &:focus{
+            background-color: transparent;
+            border-color: var(--border-color-1);
+            color: var(--black-90);
+            box-shadow: none;
+            option{
+                background-color: var(--select-box-bg-color);
+            }
+        }
+    }
+    .select-icon{
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform:translateY(-50%);
+        pointer-events: none;
+        font-size: 0.875rem;
+    }
+}

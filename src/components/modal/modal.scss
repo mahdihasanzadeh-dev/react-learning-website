@@ -1,0 +1,21 @@
+.modal-container {
+    position: fixed;
+    z-index: 500;
+    width: 90%;
+    border-radius: 5px;
+    padding: 16px;
+    left: 5%;
+    top: 5%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    overflow-y: hidden;
+}
+
+@media (min-width: 600px) {
+    .modal-container {
+        width: 500px;
+        left: calc(50% - 250px);
+        top: 20%;
+        
+    }
+}

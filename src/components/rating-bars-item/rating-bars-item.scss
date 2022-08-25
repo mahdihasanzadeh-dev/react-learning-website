@@ -1,0 +1,19 @@
+.rating-bars-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    .progress{
+        height: 8px;
+        background-color: var(--border-color-2);
+        width: calc(100% - 120px);
+        margin-left: 20px;
+        border-radius: 0;
+        .progress-bar{
+            background-color: var(--main-color);
+        }
+    }
+    .star-text{
+        min-width: 60px;
+        color: var(--orange);
+    }
+}

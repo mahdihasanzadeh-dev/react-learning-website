@@ -8,7 +8,6 @@ import './course-instructor.scss';
 export function CourseInstructor():ReactElement {
   return (
     <div className="course-instructor box">
-      <h3 className="mb-3">مدرس</h3>
       <div className="instructor-details">
         <div className="details-wrap">
           <div className="right-box">
