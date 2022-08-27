@@ -1,0 +1,33 @@
+.contact-form{
+    .form-title{
+        text-align: center;
+        font-weight: 600;
+    }
+    .form-group{
+
+        margin-top: 1.5rem;
+    }
+    .form-control{
+        height: 3rem;
+        border-color:var(--border-color-1) !important;
+        color: var(--black-90) !important;
+        background-color: transparent;
+        &:focus{
+            box-shadow: none;
+        }
+        &::placeholder{
+            color: var(--black-70) !important;
+        }
+    }
+    textarea{
+        &.form-control{
+            height: 120px;
+            resize: none;
+        }
+    }
+    button{
+        width: 100%;
+        margin-top: 1.5rem;
+        height: 3rem;
+    }
+}

@@ -1,0 +1,18 @@
+.contact-item{
+    position: relative;
+    padding-right: 55px;
+    margin-bottom: 40px;
+    .icon-box{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background-color: var(--main-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        top: 0;
+        right: 0;
+        color: var(--WHITE);
+    }
+}

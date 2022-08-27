@@ -32,7 +32,9 @@ export function CourseDetails():ReactElement {
               />
             </div>
             <div className="col-lg-4">
-              <CourseDetailsSideBar />
+              <CourseDetailsSideBar
+                title={title}
+              />
             </div>
           </div>
         </div>

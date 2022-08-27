@@ -8,11 +8,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import './course-details-sidebar.scss';
 import { Button } from '@components/button/button';
-import { Modal } from '@components/modal/modal';
+import Modal from 'react-bootstrap/Modal';
 import { courseDetailsSideBarHelper } from './course-details-sidebar-helper';
-import type { ICourseDetailsSideBarState } from './course-details-sidebar-interface';
+import type { ICourseDetailsSideBarState, ICourseDetailsSideBarProperties } from './course-details-sidebar-interface';
 
-export function CourseDetailsSideBar():ReactElement {
+export function CourseDetailsSideBar({ title }: ICourseDetailsSideBarProperties):ReactElement {
   const [state, setState] = useState<ICourseDetailsSideBarState>({
     showModal: false,
   });
@@ -44,13 +44,31 @@ export function CourseDetailsSideBar():ReactElement {
         <Button
           text="ثبت نام"
           backgroundColor="main"
-          onClick={() => console.log('enrolled now')}
+          onClick={() => console.log('enroll now')}
         />
       </div>
-      <Modal show={showModal} modalClosed={helper.closeModalHandler}>
-        <video controls>
-          <source src="/src/assets/video/course-preview.mp4" type="video/mp4" />
-        </video>
+      <Modal
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+        show={showModal}
+        onHide={helper.closeModalHandler}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>
+            پیش نمایش دوره
+            {' '}
+            {title}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className="ratio ratio-16x9">
+            <video controls>
+              <source src="/src/assets/video/course-preview.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </Modal.Body>
+
       </Modal>
     </div>
   );
