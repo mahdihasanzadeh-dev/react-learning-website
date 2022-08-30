@@ -7,6 +7,7 @@ import {
 import { ROUTES } from '@globals/routes';
 import { Header } from '@components/header/header';
 import { Footer } from '@components/footer/footer';
+import { StyleSwitcher } from '@components/style-switcher/style-switcher';
 import './globals/bootstrap.min.css';
 import './globals/index.scss';
 
@@ -31,6 +32,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         }
       </Routes>
       <Footer />
+      <StyleSwitcher />
     </div>
   </Router>,
 );

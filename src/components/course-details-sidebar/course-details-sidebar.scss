@@ -38,7 +38,7 @@
             color: var(--WHITE);
             top: calc(50% + 40px);
             font-weight: 500;
-            width: 100%;
+            width: 100%; 
         }
     }
     h3{
@@ -91,6 +91,34 @@
     }
 
 }
-.modal-header .btn-close{
-    margin: 0 !important;
+.modal-content{
+    background-color: var(--body-bg-color) !important;
+    color: var(--black-90);
+    .modal-header .btn-close{
+        margin: 0 !important;
+        background: transparent;
+        color: var(--black-90) !important;
+        &::after{
+            display: inline-block;
+            content: "\00d7";
+            display: inline-block;
+            font-size: 3rem;
+            top: 5px;
+            left: 23px;
+            position: absolute;
+        }
+        &:focus{
+            box-shadow: none;
+        }
+    }
+}
+
+body.t-dark{
+    .course-details-sidebar {
+        .img-box{
+            p{
+                color: var(--black-90) !important;
+            }
+        }
+}
 }

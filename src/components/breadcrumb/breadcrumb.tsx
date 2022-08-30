@@ -14,7 +14,7 @@ export function BreadcrumbComponent({ title }: IBredcrumbInterface) {
     <div className="breadcrumb-nav">
       <div className="container">
         <Breadcrumb className="breadcrumb">
-          <BreadcrumbItem className="breadcrumb__item">
+          <BreadcrumbItem className="breadcrumb__item" linkAs="span">
             <Link to="/">
               صفحه اصلی
             </Link>
@@ -23,11 +23,11 @@ export function BreadcrumbComponent({ title }: IBredcrumbInterface) {
             const routeTo: string = `/${pathnames.slice(0, index + 1).join('/')}`;
             const isLast: boolean = index === pathnames.length - 1;
             return isLast ? (
-              <BreadcrumbItem active key={useId()} className="breadcrumb__item">
+              <BreadcrumbItem active key={useId()} className="breadcrumb__item" linkAs="span">
                 { (title != null) ? title : helper.translate(name)}
               </BreadcrumbItem>
             ) : (
-              <BreadcrumbItem key={useId()} className="breadcrumb__item">
+              <BreadcrumbItem key={useId()} className="breadcrumb__item" linkAs="span">
                 <Link to={routeTo}>
                   {helper.translate(name)}
                 </Link>

@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "title": " طراحی وب مقدماتی",
         "image":"/src/assets/img/courses/web-development/1.jpg",
         "instructor": "پیترجکسون",
@@ -11,7 +11,7 @@
         "category": "وب"
     },
     {
-        "id": 2,
+        "id": "2",
         "title": "آموزش React JS",
         "image":"/src/assets/img/courses/web-development/2.jpg",
         "instructor": "پیترجکسون",
@@ -22,7 +22,7 @@
         "category": "وب"
     },
     {
-        "id": 3,
+        "id": "3",
         "title": "آموزش React Native",
         "image":"/src/assets/img/courses/web-development/3.jpg",
         "instructor": "پیترجکسون",
@@ -33,7 +33,7 @@
         "category": "موبایل"
     },
     {
-        "id": 4,
+        "id": "4",
         "title": "آموزش Electron JS",
         "image":"/src/assets/img/courses/web-development/4.jpg",
         "instructor": "پیترجکسون",
@@ -44,7 +44,7 @@
         "category": "دسکتاپ"
     },
     {
-        "id": 5,
+        "id": "5",
         "title": " طراحی وب پیشرفته",
         "image":"/src/assets/img/courses/web-development/2.jpg",
         "instructor": "پیترجکسون",
@@ -55,7 +55,7 @@
         "category": "وب"
     },
     {
-        "id": 6,
+        "id": "6",
         "title": "آموزش vue js",
         "image":"/src/assets/img/courses/web-development/3.jpg",
         "instructor": "پیترجکسون",
@@ -66,7 +66,7 @@
         "category": "وب"
     },
     {
-        "id": 7,
+        "id": "7",
         "title": "آموزش angular js",
         "image":"/src/assets/img/courses/web-development/3.jpg",
         "instructor": "پیترجکسون",

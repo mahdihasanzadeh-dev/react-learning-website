@@ -4,10 +4,37 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" class="js-color-style" href="/src/assets/css/color-1.css" />
+    <link rel="stylesheet" class="js-glass-style" href="/src/assets/css/glass.css" disabled  />
     <title>وب سایت آموزشی</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      //style switcher
+      const colorStyle = document.querySelector('.js-color-style');
+      const colorPlateName = localStorage.getItem('color');
+      if(colorPlateName){
+        let path = colorStyle?.getAttribute('href')?.split('/');
+        path = path?.slice(0, path.length - 1);
+        colorStyle?.setAttribute('href', `${path?.join('/')}/${colorPlateName}.css`);
+      }
+      //dark mode
+      if (localStorage.getItem('theme-dark') === 'false') {
+        document.body.classList.remove('t-dark');
+      } else {
+        document.body.classList.add('t-dark');
+      }
+
+      //glass effect
+      const glassStyle= document.querySelector('.js-glass-style');
+      if (localStorage.getItem('glass-effect') === 'false') {
+        glassStyle?.setAttribute('disabled', 'true');
+      } else {
+        glassStyle?.removeAttribute('disabled');
+      }
+        
+    </script>
   </body>
 </html>

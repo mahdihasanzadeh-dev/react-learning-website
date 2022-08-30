@@ -7,7 +7,7 @@ export function BecomeInstructor() {
     <section className="bai-section section-padding">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-cl-10">
+          <div className="col-lg-10">
             <div className="box">
               <div className="row align-items-center">
                 <div className="col-md-6">

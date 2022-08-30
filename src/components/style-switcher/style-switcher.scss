@@ -1,0 +1,81 @@
+.style-switcher{
+    width: 250px;
+    position:fixed;
+    height: 100%;
+    right: -250px;
+    top: 0;
+    background-color: var(--WHITE);
+    z-index: 10;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    transition: right 0.3s ease;
+    &.open{
+        right: 0;
+    }
+    h3{
+        font-size: 1.125rem;
+        border-bottom: 1px solid var(--border-color-1);
+        padding: 0 0 10px;
+    }
+    &__toggler{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 28%;
+        left: -40px;
+        background-color: var(--main-color);
+        color: var(--WHITE);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px 0 0 8px;
+        cursor: pointer;
+        border: none;
+    }
+    &__item{
+        padding: 10px 0;
+        border-bottom: 1px solid var(--border-color-1);
+    }
+    .theme-colors{
+        display: grid;
+        grid-template-columns: repeat(5,minmax(0,1fr));
+        button{
+            width: 30px;
+            height: 30px;
+            border:none;
+            border-radius: 50%;
+            vertical-align: middle;
+            padding: 0;
+            position: relative;
+            &::before{
+                content: "✓";
+                color: #fff;
+                bottom: 0px;
+                left: 10px;
+                position: absolute;
+                opacity: 0;
+            }
+            &.active{
+                &::before{
+                    opacity: 1;
+                }
+            }
+           
+        }
+        .color-1{
+            background-color: hsl(0, 74%, 61%);
+        }
+        .color-2{
+            background-color: hsl(230, 74%, 61%);
+        }
+        .color-3{
+            background-color: hsl(36, 74%, 61%);
+        }
+        .color-4{
+            background-color: hsl(277, 74%, 61%);
+        }
+        .color-5{
+            background-color: hsl(164, 74%, 61%);
+        }
+    }
+}

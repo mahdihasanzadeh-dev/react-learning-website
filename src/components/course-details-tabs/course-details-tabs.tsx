@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useId } from 'react';
 import type { ReactElement } from 'react';
 import { Button } from '@components/button/button';
 import { CourseCurriculum } from '@components/course-curriculum/course-curriculum';
@@ -25,6 +25,7 @@ export function CourseDetailsTabs():ReactElement {
         {
         TABS.map((tab: ICourseTabs) => (
           <Button
+            key={useId()}
             text={tab}
             backgroundColor={tab === aciveTab ? 'main' : 'white'}
             textColor={tab === aciveTab ? 'white' : 'default'}

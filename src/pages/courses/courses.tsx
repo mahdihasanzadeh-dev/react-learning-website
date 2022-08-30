@@ -46,6 +46,7 @@ export function Courses():ReactElement {
                 {
                   categories.map((category: string) => (
                     <Button
+                      key={category}
                       text={category}
                       backgroundColor={category === aciveTab ? 'main' : 'white'}
                       textColor={category === aciveTab ? 'white' : 'default'}

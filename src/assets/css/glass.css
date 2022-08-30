@@ -1,0 +1,94 @@
+html::before,
+html::after{
+    content: '';
+    position: fixed;
+    z-index: -2;
+    border-radius: 50%;
+}
+html::before{
+    height: 100px;
+    width: 100px;
+    top: 20%;
+    left: calc(50% - 650px);
+    background-image: linear-gradient(to right bottom, var(--decoration-bg-color-1), var(--WHITE));
+}
+html::after{
+    height: 150px;
+    width: 150px;
+    bottom: 20%;
+    right: calc(50% - 650px);
+    background-image: linear-gradient(to right bottom, var(--decoration-bg-color-2), var(--WHITE));
+}
+
+body{
+    --white: hsla(0, 0%, 100%, 0.25);
+    --border-color-1: hsla(0, 0%, 0%, 0.1);
+    --border-color-2: hsla(0, 0%, 100%, 0.40);
+    --shadow: none;
+    --backdrop-filter-blur:blur(5px);
+    background-image: linear-gradient(to right, var(--body-gradient-bg-color-1), var(--body-gradient-bg-color-2));
+    background-attachment: fixed;
+    padding: 40px 0;
+}
+/* control lightness using opacity property */
+body::before{
+    content: '';
+    position: fixed;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--WHITE);
+    opacity: 0.3;
+    z-index: -3;
+}
+.main-wrapper{
+    max-width: 1320px;
+    background-color: var(--white);
+    border: 1px solid var(--border-color-2);
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+}
+.main-wrapper::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: var(--backdrop-filter-blur);
+    -webkit-backdrop-filter: var(--backdrop-filter-blur);
+    z-index: -1;
+    border-radius: 20px;
+}
+.sub-menu ,
+.style-switcher {
+    backdrop-filter: var(--backdrop-filter-blur);
+    -webkit-backdrop-filter: var(--backdrop-filter-blur);
+
+}
+.style-switcher{
+    border-left: 1px solid var(--border-color-2);
+    background-color: transparent !important;
+}
+
+/* glass dark */
+body.t-dark{
+    --border-color-2: hsla(0, 0%, 100%, 0.07) !important;
+    --border-color-1: hsla(0, 0%, 100%, 0.15) !important;
+    --white: hsla(0, 0%, 100%, 0.05)  !important;
+    --shadow:none !important;
+}
+/* control darkness using opacity */
+body.t-dark::before{
+    content: '';
+    position: fixed;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--BLACK);
+    opacity: 0.2;
+    z-index: -1;
+}

@@ -2,17 +2,6 @@
 @import './var';
 
 :root{
-  --hue-value-1: 0;
-  --hue-value-2: 230;
-  --main-color: hsl(var(--hue-value-1), 74%, 61%);
-  --button-hover-color: hsl(var(--hue-value-1), 57%, 53%);
-  --body-bg-color: hsl(var(--hue-value-1), 63%, 97%);
-  --border-color-2: hsl(var(--hue-value-1), 40%, 93%);
-  --shadow: 0 0 10px hsl(var(--hue-value-1), 40%, 90%);
-  --body-gradient-bg-color-1: hsl(var(--hue-value-1), 100%, 50%, 0.2);
-  --body-gradient-bg-color-2: hsl(var(--hue-value-2), 100%, 50%, 0.2);
-  --decoration-bg-color-1: hsl(var(--hue-value-1), 100%, 70%);
-  --decoration-bg-color-2: hsl(var(--hue-value-2), 100%, 70%);
   --orange: hsl(36, 80%, 50%);
   --white: hsl(0, 0%, 100%);
   --WHITE: hsl(0, 0%, 100%);
@@ -77,8 +66,21 @@ body {
   color: var(--black-70) !important;
   min-height: 100vh;
   overflow-x: hidden;
+  width: 100vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+body.t-dark{
+  --body-bg-color: hsl(240, 10%, 19%);
+  --black-70: hsl(0, 0%, 87%);
+  --black-90: hsl(0, 0%, 100%);
+  --shadow: 0 0 10px hsla(0, 0%, 0%, 0.08);
+  --WHITE: hsl(240, 8%, 21%);
+  --white: hsl(240, 8%, 21%);
+  --select-box-bg-color: hsl(240, 8%, 21%);
+  --border-color-1: hsl(240, 9%, 30%);
+  --border-color-2: hsl(240, 9%, 25%);
+
 }
 
 a {

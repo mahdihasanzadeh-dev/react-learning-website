@@ -1,5 +1,5 @@
 export interface ICourseItemProperties {
-  id : number;
+  id : string;
   title: string;
   image: string;
   instructor: string;

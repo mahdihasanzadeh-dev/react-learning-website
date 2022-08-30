@@ -17,7 +17,9 @@
                 box-shadow: none;
                 border-bottom: 1px solid var(--border-color-1);
                 &::after {
-                    background-image: var(--bs-accordion-btn-icon) !important;
+                    background-image: none !important;
+                    transform: rotate(-137deg) !important;
+                    margin-top: 6px;
                 }
                 span{
                     font-weight: 600;
@@ -26,7 +28,15 @@
             &::after{
                 margin-right: auto;
                 margin-left: 0;
-                
+                border: solid var(--black-90);
+                border-width: 0 2px 2px 0;
+                display: inline-block;
+                padding: 3px;
+                transform: rotate(45deg) !important;
+                background-image: none;
+                width: 10px;
+                height: 10px;
+                margin-top: -6px;
             }
             span{
                 position: absolute;
@@ -34,7 +44,7 @@
                 font-size: 0.875rem;
             }
             &:focus{
-                box-shadow: transparent !important;
+                box-shadow: none !important;
             }
         }
     }
@@ -45,6 +55,7 @@
             align-items: center;
             padding: 0.5rem;
             position: relative;
+            color: var(--black-90);
             span{
                 position: absolute;
                 font-size: 0.875rem;
