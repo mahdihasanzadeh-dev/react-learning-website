@@ -6,25 +6,31 @@
         margin-left: 2.5rem;
         position: relative;
         &:hover{
-            > a {
+            > a{
                 color: var(--main-color);
             }
         }
-        > a {
+        svg{
+            font-size: 13px;
+            margin-right: 3px;
+            // pointer-events: none;
+        }
+        a {
             display: block;
             padding: 1.5rem 0;
             font-weight: 400;
             color: var(--black-90);
             transition: color 0.3s ease;
-            > svg{
-                font-size: 13px;
-                margin-right: 3px;
-                pointer-events: none;
-            }
             &:hover{
                 color: var(--main-color);
             }
         }
+        div{
+            display: flex;
+            align-items: center;
+            
+        }
+       
         @media screen and (min-width: $medium-width) {
             &:hover{
                 >.sub-menu{
@@ -58,6 +64,49 @@
             color: var(--black-90);
             font-weight: 400;
             transition: color 0.3s ease;
+        }
+    }
+}
+@media (max-width: $large-width) {
+    .menu{
+        &__item{
+            display: block;
+            margin: 0;
+            transition: all .3s eases;
+            div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid var(--border-color-1);
+                padding: 0 6px;
+            }
+           a{   
+                padding: 12px 15px;    
+            }
+            &:first-child{
+                border-top: 1px solid var(--border-color-1);
+            }
+            .sub-menu{
+                position: relative;
+                width: 100%;
+                opacity: 1;
+                visibility: visible;
+                box-shadow: none;
+                transform: translateY(0);
+                top: auto;
+                padding: 0;
+                border-radius: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                &.active{
+                    max-height:100%;
+                }
+                &__item a{
+                    padding: 12px 45px;
+                    border-bottom: 1px solid var(--border-color-1);
+                }
+            }
         }
     }
 }

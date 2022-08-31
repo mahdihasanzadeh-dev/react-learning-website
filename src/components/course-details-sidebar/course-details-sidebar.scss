@@ -1,3 +1,4 @@
+@import '/src/globals/var';
 .course-details-sidebar {
     .img-box{
         margin-bottom: 20px;
@@ -120,5 +121,16 @@ body.t-dark{
                 color: var(--black-90) !important;
             }
         }
+    }
 }
+
+@media (max-width: $large-width) {
+    .course-details-sidebar{
+        margin-top: 30px;
+    }
+}
+@media (max-width: $small-width) {
+    .modal-dialog{
+        padding: 8px 16px;
+    }
 }

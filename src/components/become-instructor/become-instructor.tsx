@@ -10,7 +10,7 @@ export function BecomeInstructor() {
           <div className="col-lg-10">
             <div className="box">
               <div className="row align-items-center">
-                <div className="col-md-6">
+                <div className="col-md-6 mb-4 m-md-0">
                   <div className="circular-img">
                     <div className="circular-img__inner">
                       <div className="circular-img__circle" />

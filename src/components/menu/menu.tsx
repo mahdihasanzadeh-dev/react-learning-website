@@ -17,6 +17,7 @@ export function Menu():ReactElement {
                   path={path}
                   title={title}
                   subMenu={subMenu}
+                  id={id}
                 />
               );
             })

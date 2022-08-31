@@ -1,3 +1,4 @@
+@import '/src/globals/var';
 .footer{
     &__top{
         padding: 50px 0 20px;
@@ -49,5 +50,12 @@
     }
     &__bottom{
         border-top: 1px solid var(--border-color-2);
+    }
+}
+@media (max-width: $small-width){
+    .footer{
+        &__item{
+            text-align: center;
+        }
     }
 }

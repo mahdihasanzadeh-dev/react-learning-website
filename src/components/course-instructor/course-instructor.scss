@@ -1,3 +1,4 @@
+@import '/src/globals/var';
 .course-instructor{
     h3{
         font-weight: 600;
@@ -42,4 +43,11 @@
             margin-bottom: 0;
         }
 
+}
+@media (max-width: $large-width) {
+    .course-instructor{
+        .details-wrap{
+            margin-bottom: 15px;
+        }
+    }
 }

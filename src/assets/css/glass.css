@@ -63,7 +63,7 @@ body::before{
     border-radius: 20px;
 }
 .sub-menu ,
-.style-switcher {
+.style-switcher, .header__menu  {
     backdrop-filter: var(--backdrop-filter-blur);
     -webkit-backdrop-filter: var(--backdrop-filter-blur);
 
@@ -71,6 +71,9 @@ body::before{
 .style-switcher{
     border-left: 1px solid var(--border-color-2);
     background-color: transparent !important;
+}
+.header__backdrop.active{
+    opacity: 1;
 }
 
 /* glass dark */
@@ -91,4 +94,41 @@ body.t-dark::before{
     background-color: var(--BLACK);
     opacity: 0.2;
     z-index: -1;
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+    body{
+        padding: 40px 30px;
+    }
+    html::before{
+        left: -35px;
+        top: 10%;
+    }
+    html::after{
+        right: -60px;
+        bottom: 10%;
+    }
+}
+@media(max-width:992px){
+    .header__menu{
+        backdrop-filter: var(--backdrop-filter-blur);
+    }
+    .header .sub-menu{
+        border: 0;
+        backdrop-filter: none;
+
+    }
+}
+@media(max-width:768px){
+    body{
+        padding: 35px 15px;
+    }
+    html::before{
+        left: -50px;
+    }
+    html::after{
+        right: -75px;
+    }
 }

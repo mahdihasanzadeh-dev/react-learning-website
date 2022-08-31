@@ -1,5 +1,7 @@
 .circular-img{
     &__circle{
         background-color: var(--yellow-light);
+        max-width: 100%;
+        max-height: 100%;
     }
 }

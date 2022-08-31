@@ -69,6 +69,13 @@ body {
   width: 100vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
 }
 body.t-dark{
   --body-bg-color: hsl(240, 10%, 19%);
@@ -172,4 +179,36 @@ h3{
     padding-left: var(--bs-breadcrumb-item-padding-x);
   }
 
+}
+@media (max-width: $large-width) {
+  .circular-img {
+    max-width: 280px;
+    &__circle{
+      width: 280px;
+      height: 280px;
+    }
+    img{
+      max-width: 240px;
+    }
+  }
+}
+@media (max-width: $medium-width){
+  .box{
+    padding: 20px 15px;
+  }
+  h3{
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: $small-width){
+  .circular-img {
+    max-width: 230px;
+    &__circle{
+      width: 230px;
+      height: 230px;
+    }
+    img{
+      max-width: 200;
+    }
+  }
 }

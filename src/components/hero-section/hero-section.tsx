@@ -24,7 +24,7 @@ export function HeroSection():ReactElement {
               />
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 order-first order-md-last mb-5 mb-md-0">
             <div className="hero__img">
               <div className="circular-img">
                 <div className="circular-img__inner">

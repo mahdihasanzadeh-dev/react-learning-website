@@ -5,7 +5,7 @@ import './decoration-imgs.scss';
 
 export function DecorationImgs({ testimonialsData }: IDecorationImgsProperties):ReactElement {
   return (
-    <div className="decoration-imgs">
+    <div className="decoration-imgs d-none d-lg-block">
       {
         testimonialsData.map((testimonial) => <img key={useId()} src={testimonial.avatar} className="decoration-imgs__item" alt={testimonial.name} />)
       }
