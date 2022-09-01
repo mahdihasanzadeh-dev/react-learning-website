@@ -1,4 +1,4 @@
-﻿﻿# Online Learning Website template using React and Typescript | Responsive  
+# Online Learning Website template using React and Typescript | Responsive  
 
 در این Repo با استفاده از  ReactJs, TypeScript, HTML, Sass, bootstarp یک قالب(template) چند صفحه ای(multipage) ایجاد شده است.  
 این قالب مدرن و منحصر به فرد طراحی زیبا و ویژگی های منحصر به فردی دارد. این قالب برای  وب سایت های آموزشی  مانند دانشگاه، کالج، مدرسه، دوره های آنلاین، آکادمی ، مراکز آموزشی، موسسات و موارد دیگر مناسب است.
