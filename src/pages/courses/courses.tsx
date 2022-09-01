@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { SEO } from '@components/seo/seo';
 import type { ReactElement } from 'react';
 import { Language } from '@globals/enum';
@@ -8,6 +8,7 @@ import { CoursesSectionHeadline } from '@components/courses-section-headline/cou
 import CoursesData from '@data/courses.json';
 import { Button } from '@components/button/button';
 import { Paginate } from '@components/paginate/paginate';
+import { Spinner } from '@components/spinner/spinner';
 import type { ICoursesState } from './courses-interface';
 import { coursesHelper } from './courses-helper';
 import './courses.scss';
@@ -26,7 +27,7 @@ export function Courses():ReactElement {
   }, []);
 
   return (
-    <>
+    <Suspense fallback={<Spinner />}>
       <SEO
         pageTitle="دوره های آموزشی"
         description="یادگیری آسان با وب سایت آموزشی ..."
@@ -70,6 +71,6 @@ export function Courses():ReactElement {
           </div>
         </div>
       </section>
-    </>
+    </Suspense>
   );
 }

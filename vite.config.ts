@@ -1,10 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { splitVendorChunkPlugin } from 'vite'
 import * as path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    splitVendorChunkPlugin()
+  ],
   resolve: {
     alias: {
       '@components': path.resolve(__dirname, './src/components'),
@@ -14,5 +18,7 @@ export default defineConfig({
       '@assets': path.resolve(__dirname, './src/assets'),
       '@globals': path.resolve(__dirname, './src/globals'),
     },
-  }
+  },
+  publicDir: 'public',
+  base:'./'
 })

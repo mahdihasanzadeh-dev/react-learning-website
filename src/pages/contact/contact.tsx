@@ -1,16 +1,18 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
+import { Suspense } from 'react';
 import { SEO } from '@components/seo/seo';
 import type { ReactElement } from 'react';
 import { Language } from '@globals/enum';
 import { BreadcrumbComponent } from '@components/breadcrumb/breadcrumb';
 import { ContactItems } from '@components/contact-items/contact-itesm';
 import { ContactForm } from '@components/contact-form/contact-form';
+import { Spinner } from '@components/spinner/spinner';
 import './contact.scss';
 
 export function Contact(): ReactElement {
   return (
-    <>
+    <Suspense fallback={<Spinner />}>
       <SEO
         pageTitle="تماس با ما"
         description="یادگیری آسان با وب سایت آموزشی ..."
@@ -33,7 +35,7 @@ export function Contact(): ReactElement {
           </div>
         </div>
       </section>
-    </>
+    </Suspense>
 
   );
 }

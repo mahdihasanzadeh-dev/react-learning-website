@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import BannerImage from '@assets/img/banner-img.png';
 import type { ReactElement } from 'react';
 import type { NavigateFunction } from 'react-router-dom';
+import { BubbleAnimation } from '@components/bubble-animation/bubble-animation';
 import './hero-section.scss';
 
 export function HeroSection():ReactElement {
@@ -10,6 +11,7 @@ export function HeroSection():ReactElement {
 
   return (
     <div className="hero-section">
+      <BubbleAnimation />
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6">

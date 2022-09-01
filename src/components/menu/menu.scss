@@ -24,6 +24,9 @@
             &:hover{
                 color: var(--main-color);
             }
+            &.selected{
+                color: var(--main-color);
+            }
         }
         div{
             display: flex;
@@ -37,6 +40,7 @@
                     visibility: visible;
                     opacity: 1;
                     transform: translateY(0);
+                    backdrop-filter:none !important;
                 }
             }
             

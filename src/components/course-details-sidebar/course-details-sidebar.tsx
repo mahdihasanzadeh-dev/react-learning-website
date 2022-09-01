@@ -23,7 +23,7 @@ export function CourseDetailsSideBar({ title }: ICourseDetailsSideBarProperties)
   return (
     <div className="course-details-sidebar box">
       <div className="img-box" onClick={helper.showModalHandler}>
-        <img src="/src/assets/img/courses/web-development/1.jpg" alt="course preview" />
+        <img src="/img/courses/web-development/1.jpg" alt="course preview" />
         <div className="play-icon">
           <FontAwesomeIcon icon={faPlay} />
         </div>
@@ -64,7 +64,7 @@ export function CourseDetailsSideBar({ title }: ICourseDetailsSideBarProperties)
         <Modal.Body>
           <div className="ratio ratio-16x9">
             <video controls>
-              <source src="/src/assets/video/course-preview.mp4" type="video/mp4" />
+              <source src="/video/course-preview.mp4" type="video/mp4" />
             </video>
           </div>
         </Modal.Body>

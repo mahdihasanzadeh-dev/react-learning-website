@@ -1,15 +1,17 @@
+import { Suspense } from 'react';
 import { SEO } from '@components/seo/seo';
 import type { ReactElement } from 'react';
 import { Language } from '@globals/enum';
 import { BreadcrumbComponent } from '@components/breadcrumb/breadcrumb';
 import { Input } from '@components/input/input';
 import { Button } from '@components/button/button';
+import { Spinner } from '@components/spinner/spinner';
 import { Link } from 'react-router-dom';
 import './signup.scss';
 
 export function SignUp(): ReactElement {
   return (
-    <>
+    <Suspense fallback={<Spinner />}>
       <SEO
         pageTitle="ثبت نام"
         description="یادگیری آسان با وب سایت آموزشی ..."
@@ -59,7 +61,7 @@ export function SignUp(): ReactElement {
           </div>
         </div>
       </section>
-    </>
+    </Suspense>
 
   );
 }

@@ -1,15 +1,17 @@
+import { Suspense } from 'react';
 import { SEO } from '@components/seo/seo';
 import type { ReactElement } from 'react';
 import { BreadcrumbComponent } from '@components/breadcrumb/breadcrumb';
 import { Language } from '@globals/enum';
-import './login.scss';
 import { Input } from '@components/input/input';
+import { Spinner } from '@components/spinner/spinner';
 import { Link } from 'react-router-dom';
 import { Button } from '@components/button/button';
+import './login.scss';
 
 export function LogIn(): ReactElement {
   return (
-    <>
+    <Suspense fallback={<Spinner />}>
       <SEO
         pageTitle="ورود"
         description="یادگیری آسان با وب سایت آموزشی ..."
@@ -55,6 +57,6 @@ export function LogIn(): ReactElement {
           </div>
         </div>
       </section>
-    </>
+    </Suspense>
   );
 }

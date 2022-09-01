@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import type { ReactElement } from 'react';
 import { SEO } from '@components/seo/seo';
 import { HeroSection } from '@components/hero-section/hero-section';
@@ -7,11 +8,12 @@ import { Testimonials } from '@components/testimonials/testimonials';
 import { BecomeInstructor } from '@components/become-instructor/become-instructor';
 import { CoursesSectionHeadline } from '@components/courses-section-headline/courses-section-headline';
 import { ShowAllCourses } from '@components/show-all-courses/show-all-courses';
+import { Spinner } from '@components/spinner/spinner';
 import { Language } from '@globals/enum';
 
 export function Home():ReactElement {
   return (
-    <>
+    <Suspense fallback={<Spinner />}>
       <SEO
         pageTitle="صفحه اصلی"
         description="یادگیری آسان با وب سایت آموزشی ..."
@@ -28,6 +30,6 @@ export function Home():ReactElement {
       <ShowAllCourses />
       <Testimonials />
       <BecomeInstructor />
-    </>
+    </Suspense>
   );
 }
