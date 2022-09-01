@@ -18,7 +18,7 @@ export function HeroSection():ReactElement {
             <div className="hero__text">
               <h2 className="mb-3">سرمایه گذاری در دانش بهترین سود را دارد</h2>
               <h1 className="mb-3">قالب وب سایت آموزشی (ReactJs + TS)</h1>
-              <p className="mb-4">برای مشاده source code قالب در گیت هاب بر روی دکمه زیر کلیک کنید</p>
+              <p className="mb-4">برای مشاهده source code قالب در گیت هاب بر روی دکمه زیر کلیک کنید</p>
               <a href="https://github.com/mahdihasanzadeh-dev/react-learning-website" target="_blank" rel="noreferrer">
                 <Button
                   text="مشاهده source code"

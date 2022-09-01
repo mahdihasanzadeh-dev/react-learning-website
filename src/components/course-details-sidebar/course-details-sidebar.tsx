@@ -64,7 +64,10 @@ export function CourseDetailsSideBar({ title }: ICourseDetailsSideBarProperties)
         <Modal.Body>
           <div className="ratio ratio-16x9">
             <video controls>
-              <source src="/video/course-preview.mp4" type="video/mp4" />
+              <source
+                src="https://hajifirouz11.cdn.asset.aparat.com/aparat-video/5e7955a86a6fd940990aba8905c5286347358381-1080p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjE1Y2RlNzk2M2QwMTZlNzc1YmE4ZTQ3NDQyMmUyNzhkIiwiZXhwIjoxNjYyMDU2MDE0LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.Baz3kRNHJQOEEh0BKe8ExPBvmPKF9GFO-UFVPWC5Ap0"
+                type="video/mp4"
+              />
             </video>
           </div>
         </Modal.Body>
