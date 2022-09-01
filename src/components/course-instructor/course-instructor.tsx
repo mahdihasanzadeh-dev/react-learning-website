@@ -2,7 +2,6 @@
 import type { ReactElement } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faPlayCircle, faCertificate } from '@fortawesome/free-solid-svg-icons';
-import instructorAvatar from '@assets/img/instructor/1.png';
 import './course-instructor.scss';
 
 export function CourseInstructor():ReactElement {
@@ -12,7 +11,7 @@ export function CourseInstructor():ReactElement {
         <div className="details-wrap">
           <div className="right-box">
             <div className="img-box">
-              <img src={instructorAvatar} alt="مدرس دوره" />
+              <img src="/img/instructor/1.png" alt="مدرس دوره" />
             </div>
           </div>
           <div className="left-box">

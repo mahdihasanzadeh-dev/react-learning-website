@@ -1,0 +1,33 @@
+@import '/src/globals/var';
+.not-found-section{
+    .not-found-box{
+        &__title{
+            font-size: 2.5rem;
+            margin: 0 0 30px;
+            font-weight: 600;
+            text-align: center;
+            color: var(--main-color);
+        }
+        &__button{
+            display: flex;
+            justify-content: center;
+            button{
+                margin-top: 1.5rem;
+                height: 3rem;
+            }
+        }
+        
+        p{
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: $medium-width) {
+    .login-form{
+        &__title{
+            font-size: 1.375rem !important;
+        }
+    }
+}

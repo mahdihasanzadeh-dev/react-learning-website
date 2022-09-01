@@ -50,6 +50,9 @@
     }
     &__bottom{
         border-top: 1px solid var(--border-color-2);
+        a{
+            color: var(--black) !important;
+        }
     }
 }
 @media (max-width: $small-width){

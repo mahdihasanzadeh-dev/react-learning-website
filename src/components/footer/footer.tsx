@@ -81,7 +81,10 @@ export function Footer() {
       </div>
       <div className="footer__bottom">
         <div className="container">
-          <p className="m-0 py-4 text-center">Copyright &copy; 2022 Mahdi Hasanzadeh</p>
+          <p className="m-0 py-4 text-center">
+            Copyright &copy; 2022
+            <a href="https://github.com/mahdihasanzadeh-dev/react-learning-website" target="_blank" rel="noreferrer"> Mahdi Hasanzadeh</a>
+          </p>
         </div>
       </div>
     </footer>

@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import { useState } from 'react';
 import type { ReactElement } from 'react';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Menu } from '@components/menu/menu';
@@ -22,10 +21,10 @@ export function Header():ReactElement {
       <div className="container">
         <div className="header__main">
           <div className="header__logo">
-            <Link to="/">
+            <a href="https://github.com/mahdihasanzadeh-dev/react-learning-website" target="_blank" rel="noreferrer">
               <span>mahdi</span>
               hasanzadeh
-            </Link>
+            </a>
           </div>
           <button type="button" className="header__hamburger-btn" onClick={helper.openSideBar}>
             <span />

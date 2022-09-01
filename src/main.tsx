@@ -10,6 +10,7 @@ import { Footer } from '@components/footer/footer';
 import { StyleSwitcher } from '@components/style-switcher/style-switcher';
 import './globals/bootstrap.min.css';
 import './globals/index.scss';
+import { NotFound } from '@pages/not-found/not-found';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Router>
@@ -30,6 +31,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             );
           })
         }
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
       <StyleSwitcher />
